@@ -5,7 +5,14 @@
         max-width: 64rem;
         margin:auto;
     }
-
+.item2{
+    background-image: url('Screenshot\(221\).png');
+    text-align: center;
+}
+.box{
+    background-color: aquamarine;
+    opacity: 0.5;
+    margin: 50px
 /*----------- BODY --------------*/
 
 

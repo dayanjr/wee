@@ -33,7 +33,7 @@ header h2 {margin: 0; font-weight: normal;}
     grid-column: 1 /span 2;
     display: flex;
 }
-img{
+.logo{
     max-width: 120px;
 }
 /*----------- NAVIGATION --------------*/
@@ -69,6 +69,10 @@ main {
     padding: 0 2%;
     min-height: 10rem;
     margin-bottom: 20px;
+}
+.hero-image{
+    max-width: 400px;
+    margin: 23px
 }
 .grid-container {
         display: grid;

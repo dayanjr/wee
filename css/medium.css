@@ -49,6 +49,8 @@
         height: auto;
         background-image: url('g-img.png');
         text-align: center;
+        background-size: 808px 260px;
+        background-repeat: no-repeat; 
     }
     .item3{
         grid-column: 1/2;

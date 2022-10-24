@@ -4,7 +4,13 @@
 
     /*----------- BODY --------------*/
     
-    
+    .box{
+        background-color: aquamarine;
+        opacity: 0.5;
+        margin: 65px;
+        height: 90px;
+        padding: 7px;
+    }
     
     /*----------- HEADER --------------*/
     
@@ -69,7 +75,13 @@
         grid-row: 7;
         height: auto;
     }
-      
+    footer {
+        background-color: #ddd;
+        padding: .5rem 2%;
+        display: flex;
+      flex-direction: row;
+      gap: 20px;
+      }
     
     /*----------- FOOTER --------------*/
         

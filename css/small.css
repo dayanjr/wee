@@ -133,5 +133,17 @@ footer {
     background-color: #ddd;
     padding: .5rem 2%;
     display: flex;
-    column-gap: 20px;
+  flex-direction: column;
+  align-items: center;
+
 }
+.box{
+    background-color: aquamarine;
+    opacity: 0.5;
+    margin: 65px;
+    height: 90px;
+    padding: 7px;
+}
+a:hover {
+    background-color: yellow;
+  }

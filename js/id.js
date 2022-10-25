@@ -35,3 +35,8 @@ const day = new Date();
 document.getElementById("o").innerHTML = day.getDate();
 const y = new Date();
 document.getElementById("year").innerHTML = y.getFullYear();
+function toggleMenu(){
+    console.log("it works");
+    document.getElementById("pn").classList.toggle("open");}
+const x = document.getElementById('ham');
+x.onclick = toggleMenu

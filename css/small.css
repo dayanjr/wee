@@ -159,3 +159,15 @@ footer {
 a:hover {
     background-color: yellow;
   }
+.icons{
+    width: 50px;
+}
+div#message{background-color: red;
+    color: #fff;
+height: 50px;
+text-align: center;
+margin: 20px;
+padding: 14px;
+}
+div.showme{display: block;}
+div.hideme{display: none;}

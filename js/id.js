@@ -40,3 +40,12 @@ function toggleMenu(){
     document.getElementById("pn").classList.toggle("open");}
 const x = document.getElementById('ham');
 x.onclick = toggleMenu
+const element = document.getElementById("message")
+if (dayOfWeek == "thursday"){
+    console.log(dayOfWeek)
+    element.classList.add("showme");
+}else{
+    console.log("hoje nao");
+    console.log(dayOfWeek);
+    element.classList.add("hideme");
+}

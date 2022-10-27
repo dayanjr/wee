@@ -41,9 +41,13 @@ function toggleMenu(){
 const x = document.getElementById('ham');
 x.onclick = toggleMenu
 const element = document.getElementById("message")
-if (dayOfWeek == "thursday"){
+if (dayOfWeek == "monday"){
     console.log(dayOfWeek)
     element.classList.add("showme");
+}else if (dayOfWeek == "tuesday"){
+    console.log(dayOfWeek)
+    element.classList.add("showme");
+
 }else{
     console.log("hoje nao");
     console.log(dayOfWeek);

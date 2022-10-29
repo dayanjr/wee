@@ -1,0 +1,123 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: rgb(255, 66, 66);
+display: grid;
+grid-template-columns: 75px auto;
+}
+header div{margin-left: 70px;}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+.date{
+    background-color: #aaa;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    grid-column: 1 /span 2;
+    display: flex;
+}
+.logo{
+    max-width: 120px;
+}
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav button {
+    margin: 0 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.open{display: block;}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    margin-bottom: 20px;
+}
+.hero-image{
+    max-width: 400px;
+    margin: 23px
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.box{
+    background-color: aquamarine;
+    opacity: 0.5;
+    margin: 65px;
+    height: 90px;
+    padding: 7px;
+}
+a:hover {
+    background-color: yellow;
+  }
+.icons{
+    width: 50px;
+}
+div#message{background-color: red;
+    color: #fff;
+height: 50px;
+text-align: center;
+margin: 20px;
+padding: 14px;
+}
+div.showme{display: block;}
+div.hideme{display: none;}

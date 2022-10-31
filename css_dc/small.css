@@ -37,6 +37,10 @@ header h2 {margin: 0; font-weight: normal;}
     max-width: 120px;
 }
 /*----------- NAVIGATION --------------*/
+.active{
+    background-color: #000;
+    color: #fff;
+}
 nav {
     background-color: #666;
 }

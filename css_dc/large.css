@@ -11,10 +11,6 @@
 main{
     margin-bottom: 20px;
 }
-.hero-image{
-  max-width: 900px;
-  margin: 23px
-}
 .box{
     background-color: aquamarine;
     opacity: 0.5;

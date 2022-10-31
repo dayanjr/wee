@@ -80,10 +80,10 @@ main {
     min-height: 10rem;
     margin-bottom: 20px;
 }
-.hero-image{
-    max-width: 400px;
-    margin: 23px
+.myphoto{
+    width: 90%;
 }
+.im{width: 100%;}
 .grid-container {
         display: grid;
        grid-template-columns: 1fr 1fr;

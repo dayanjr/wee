@@ -84,10 +84,14 @@ main {
     min-height: 10rem;
     margin-bottom: 20px;
 }
-.hero-image{
-    max-width: 400px;
-    margin: 23px
+.myphoto{
+    width: 50%;
+    background-color: aqua;
 }
+.im{width: 100%;
+border: red;}
+
+
 
 .grid{
     display: grid;

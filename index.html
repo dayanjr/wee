@@ -34,7 +34,9 @@
     </nav>
 
     <main>
-        <img src="hero-img.png" alt="" class="hero-image">
+        <figure class="myphoto">
+            <img src="hero-img.png" alt="" class="im">
+        </figure>
         <h1>Home-page</h1>
         <div id="message">attention!!!(Only today) new offers with 10% of discount</div>
         <div class="grid-container">
@@ -51,8 +53,9 @@
         <p>999-9999</p></section></div>  
             <div class="item4"><section><h1>weather</h1>
                 <img src="cloudy-day.png" alt="weather-icon" class="icons">
-                <p>temperature: 100 celsius</p> 
-                    <p>sunny day windspeed:2.5km/h</p>
+                <p>Current Temperature is <span id="temp">34</span>&deg;</p> 
+                <p>Current Wind Speed is <span id="speed">60</span>mph</p> 
+                <p id="chill">message</p>
             </section>
             </div>
             <div class="item5"><section>
@@ -80,6 +83,8 @@
             <p><a href="https://www.google.com/maps/place/Goi%C3%A2nia,+GO,+Brasil/@-16.6954999,-49.4443564,11z/data=!3m1!4b1!4m5!3m4!1s0x935ef6bd58d80867:0xef692bad20d2678e!8m2!3d-16.6868912!4d-49.2647943">link to map</a></p>
         </div>
         <script src="js/id.js">
+        </script>
+        <script src="js/ws.js">
         </script>
     </footer>
 

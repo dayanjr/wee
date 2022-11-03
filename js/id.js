@@ -15,7 +15,7 @@ if (dayOfWeek == 0){
     document.getElementById("omed").textContent = dayOfWeek;
 }else if (dayOfWeek == 4){
     dayOfWeek = "thursday";
-    document.getElementById("omed").textContent = dayOfWeek;
+    document.getElementById("omed").textContent = dayOfWeek  + ' ';
 }else if (dayOfWeek == 5){
     dayOfWeek = "friday";
     document.getElementById("omed").textContent = dayOfWeek;
@@ -30,9 +30,9 @@ const months = ["January","February","March","April","May","June","July","August
 
 const d = new Date();
 let month = months[d.getMonth()];
-document.getElementById("om").innerHTML = month;
+document.getElementById("om").innerHTML =  month;
 const day = new Date();
-document.getElementById("o").innerHTML = day.getDate();
+document.getElementById("o").textContent = " " + day.getDate();
 const y = new Date();
 document.getElementById("year").innerHTML = y.getFullYear();
 function toggleMenu(){
@@ -49,7 +49,7 @@ if (dayOfWeek == "monday"){
     element.classList.add("showme");
 
 }else{
-    console.log("hoje nao");
+    console.log("hoj");
     console.log(dayOfWeek);
     element.classList.add("hideme");
 }

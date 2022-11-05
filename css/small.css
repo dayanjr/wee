@@ -81,7 +81,9 @@ main {
     margin-bottom: 20px;
 }
 .myphoto{
+    display: block;
     width: 90%;
+    margin: 0 2%;
 }
 .im{width: 100%;}
 .grid-container {

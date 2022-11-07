@@ -80,4 +80,8 @@ gap: 20px;
 .p{
   margin-top: 10px;
 }
+/*----form----*/
+form label.sbs{
+  padding: .4rem 0;
+}
 }

@@ -11,6 +11,7 @@
 <link href="css/small.css" rel="stylesheet">
 <link href="css/medium.css" rel="stylesheet">
 <link href="css/large.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
 
 
      
@@ -34,44 +35,59 @@
     </nav>
 
     <main>
-        <figure class="myphoto">
-            <source media="(max-width: 400px)" srcset="200pxh.png">
-            <source media="(max-width: 1000px)" srcset="500pxh.png">
-            <source media="(max-width: 1600px)" srcset="800pxh.png">
-            <img src="900pxh.png" alt="" class="im">
-        </figure>
-        <h1>Home-page</h1>
-        <div id="message">attention!!!(Only today) new offers with 10% of discount</div>
-        <div class="grid-container">
-            <div class="item1"><section><h1>Events</h1>
-                <p>Join us in these weekend for these amazing soccer game</p>
-            <a href="">more_info</a></section></div>
-            <div class="item2">
-                <section class="box"><p>Welcome to Goiania</p>
-                    <button>join the Chamber</button></section>
-            </div>
-            <div class="item3"><section><h1>transportation</h1>
-                <img src="box-truck.png" alt="truck-icon" class="icons">
-            <p>email@quicktrasnportation.com</p>
-        <p>999-9999</p></section></div>  
-            <div class="item4"><section><h1>weather</h1>
-                <img src="cloudy-day.png" alt="weather-icon" class="icons">
-                <p>Current Temperature is <span id="temp">34</span>&deg;</p> 
-                <p>Current Wind Speed is <span id="speed">60</span>mph</p> 
-                <p id="chill">message</p>
-            </section>
-            </div>
-            <div class="item5"><section>
-                <h1>fresh water</h1>
-                <img src="water-drop.png" alt="water-drop" class="icons">
-                <p>get a fresh water from the river meia-ponte</p>
-                <p>contact@freshwater.com</p>
-                <p>999-9999</p>
-            </section></div>
-            <div class="item6"><section><p>became a member of goiania moutain Chamber</p>
-            <button>join us</button></section></div>
-            <div class="item7"><section><h1>New release</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi possimus quidem odio quis aut totam accusantium pariatur! Fuga ex rem dignissimos placeat aliquid, fugiat sunt atque inventore fugit laborum!</p></section></div>
-          </div>
+        <div>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>applicant info</legend>
+                    <label class="top">
+                        First Name*<input type="text" name="fname" required> 
+                    </label>
+                    <label class="top">
+                        Last Name*<input type="text" name="fname" required> 
+                    </label>
+                    <label class="top">
+                        phone<input type="tel" name="phone" placeholder="12345666"> 
+                    </label>
+                    <label class="top">
+                        Email*<input type="email" name="email" placeholder="someone@gmail.com" required> 
+                    </label>
+                    <label class="top">
+                        Website<input type="url" name="url" placeholder="http://"> 
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Course Information</legend>
+                    <div>audience</div>
+                    <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</label>
+                    <label class="sbs"><input type="radio" name="audience" value="intermidiate">intermidiate</label>
+                    <label class="sbs"><input type="radio" name="audience" value="advanced">advanced</label>
+                    <div>software needed</div>
+                    <label class="sbs"><input type="checkbox" name="editting" value="yes">Photo Editting</label>
+                    <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
+                    <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
+                    <label class="sbs"><input type="checkbox" name="client" value="yes">FTP client</label>
+                </fieldset>
+                <fieldset>
+                    <legend>funding</legend>
+                    <label class="top" >Anticipated completion date<input type="date" name="completeDate"></label>
+                    <label class="top" >course subject
+                        <select name="subject">
+                            <option value="">please select &#9662;</option>
+                            <option value="software">software development</option>
+                            <option value="creative">creative professional</option>
+                            <option value="info">information technology</option>
+                            <option value="data">data professional</option>
+                            <option value="construction">construction</option>
+                            <option value="manufactoring">manufactoring</option>
+                            <option value="business">bussines professional</option>
+                            <option value="security">cyber security</option>
+                        </select>
+                    </label>
+                    <label class="top">how many authors<input type="number" name="authors"></label>
+                </fieldset>
+                <input type="submit" value="propose my course" class="submitBtn">
+            </form>
+        </div>
     </main>
  
     <footer>

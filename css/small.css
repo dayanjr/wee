@@ -75,6 +75,9 @@ nav ul li.active a {
     color: #fff;
 }
 /*----------- MAIN --------------*/
+.weather_icon{
+    width: 60px;
+}
 main {
     padding: 0 2%;
     min-height: 10rem;
@@ -125,7 +128,8 @@ main {
     justify-content: center;
 }
 .will{
-    padding: 9px
+    padding: 9px;
+    font-size: 15px;
 }
 .h {
     color: white;

@@ -54,13 +54,18 @@
                 <img src="box-truck.png" alt="truck-icon" class="icons">
             <p>email@quicktrasnportation.com</p>
         <p>999-9999</p></section></div>  
-            <div class="item4"><section><h1>weather</h1>
-                <img src="cloudy-day.png" alt="weather-icon" class="icons">
-                <p>Current Temperature is <span id="temp">34</span>&deg;</p> 
-                <p>Current Wind Speed is <span id="speed">60</span>mph</p> 
+        <!---weather thing-->
+            <div class="item4"><section><h1 class="h">weather</h1>
+                <div class="thing">
+                    <img id="weather_icon" src="images/placeholder.png" alt="current weather">
+                    <p class="will"><span id="currentTemp"></span>&deg;F</p>
+                </div>
+                <figcaption class="i"></figcaption>
+                <p>Wind Speed: <span id="currentspeed"></span>mph</p> 
                 <p id="chill">message</p>
             </section>
             </div>
+        <!---weather thing-->
             <div class="item5"><section>
                 <h1>fresh water</h1>
                 <img src="water-drop.png" alt="water-drop" class="icons">
@@ -87,8 +92,8 @@
         </div>
         <script src="js/id.js">
         </script>
-        <script src="js/ws.js">
-        </script>
+        <!---<script src="js/ws.js"></script>--->
+        <script src="js/weather.js"></script>
     </footer>
 
 </body>

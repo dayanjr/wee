@@ -90,5 +90,20 @@
       }
     
     /*----------- FOOTER --------------*/
-        
+    nav ul {
+        flex-direction: row;
+    }
+    
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    #cards {
+        grid-template-columns: 1fr 1fr;
+    }  
     } /* end of media query */

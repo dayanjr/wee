@@ -21,11 +21,12 @@ imagesToLoad.forEach(img=> {
 //storage
 const todayDisplay = document.querySelector(".today");
 const visitsDisplay = document.querySelector(".visits");
-let numVisits = Number(window.localStorage.getItem("visita-la"));
+let numVisits = Number(window.localStorage.getItem("visits"));
+console.log(numVisits)
 if (numVisits !== 0){
-    visitsDisplay.textContent = numVisits;
+    visitsDisplay.textContent = `Number of visits:${numVisits}`;
 } else{
-    visitsDisplay.textContent = "this is your first visit";
+    visitsDisplay.textContent = "Number of visits: this is your first visit";
 }
 numVisits++;
 localStorage.setItem("visits", numVisits);

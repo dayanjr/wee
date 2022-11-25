@@ -234,16 +234,16 @@ img:hover{
     mix-blend-mode: difference;
 }
 .out_of_ideas{
+    margin-top: 20px;
     background-color: #aaa;
     text-align: center;
+    padding: 15px;
 }
 .out_of_ideas2{
     background-color: rgb(54, 70, 143);
     text-align: center;
     color: #ddd;
-    margin-left: 250px;
-    margin-right: 250px;
-    height: 60px;
+    
     padding: 11px;
     font-size: 30px;
 }

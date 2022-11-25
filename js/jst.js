@@ -42,7 +42,8 @@ const buttonElement2 = document.getElementById("submit2");
 function copyInput() {
     const displayProphets = (dataProphets) => {
         dataProphets.prophets.forEach ( 
-          prophet => {
+          prophet => { 
+              document.getElementById("cards").className = "new";
               let article = document.createElement("article");
           
               let prophetName = document.createElement("h3");
@@ -66,6 +67,47 @@ function copyInput() {
               article.appendChild(img);
           
               document.querySelector("#cards").appendChild(article);
+              date.setAttribute("class", "color"); 
+            });
+          };
+          const getlatter_day_prophets = async () => {
+            const response = await fetch(
+              "https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json"
+            );
+            prophetList = await response.json();
+            displayProphets(prophetList);
+          };
+          getlatter_day_prophets();
+    }
+function copyInput3() {
+    const displayProphets = (dataProphets) => {
+        dataProphets.prophets.forEach ( 
+          prophet => {
+            document.getElementById("cards").className = "newid";
+              let article = document.createElement("article");
+          
+              let prophetName = document.createElement("h3");
+              prophetName.textContent = prophet.name;
+              console.log(prophet)
+          
+              let date = document.createElement("h4");
+              date.textContent = `location: ${prophet.birthdate}`;
+          
+              let location = document.createElement("h4");
+              location.textContent = `birth place: ${prophet.birthplace}`;
+          
+              let img = document.createElement("img");
+              img.setAttribute("src", prophet.imageurl);
+              console.log(prophet.imageUrl)
+              img.setAttribute("alt", prophet.name);
+          
+              article.appendChild(prophetName);
+              article.appendChild(date);
+              article.appendChild(location);
+              article.appendChild(img);
+          
+              document.querySelector("#cards").appendChild(article);
+              date.setAttribute("class", "color3"); 
             });
           };
           const getlatter_day_prophets = async () => {
@@ -83,6 +125,7 @@ function copyInput2(){
     const displayProphets = (dataProphets) => {
         dataProphets.prophets.forEach ( 
           prophet => {
+            document.getElementById("demo").id = "id1";
               let article = document.createElement("article");
           
               let prophetName = document.createElement("h3");
@@ -123,15 +166,23 @@ function copyInput2(){
 //    const element = document.getElementById("cards");
 //    element.remove();
 //}
+function death_note(){
+  const target = document.querySelector("#target");
+  target.remove();
+}
 function life_note(){
-    let therebelight = document.createElement("div");
-    therebelight.className = "cards";
+  let holder = document.createElement("div");
+  document.querySelector("#cards").appendChild(holder);
+  holder.setAttribute("id", "target"); 
+
 }
-function live_death(){
-    //death_note();
-    life_note();
-    copyInput2();
+function complet(){
+  copyInput(); 
 }
+function complet2(){
+  copyInput3(); 
+}
+
      
-      buttonElement.addEventListener("click", copyInput);
-      buttonElement2.addEventListener("click", live_death);
+      buttonElement.addEventListener("click", complet);
+      buttonElement2.addEventListener("click", complet2);

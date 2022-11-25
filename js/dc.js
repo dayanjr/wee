@@ -18,3 +18,15 @@ const observer = new IntersectionObserver(callback, options)
 imagesToLoad.forEach(img=> {
     observer.observe(img)
 })
+//storage
+const todayDisplay = document.querySelector(".today");
+const visitsDisplay = document.querySelector(".visits");
+let numVisits = Number(window.localStorage.getItem("visita-la"));
+if (numVisits !== 0){
+    visitsDisplay.textContent = numVisits;
+} else{
+    visitsDisplay.textContent = "this is your first visit";
+}
+numVisits++;
+localStorage.setItem("visits", numVisits);
+todayDisplay.textContent = Date.now();

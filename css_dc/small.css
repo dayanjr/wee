@@ -11,7 +11,10 @@ body {
     font-family: Verdana, sans-serif;
     margin: 0;
 }
-
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 /*----------- HEADER --------------*/
 header {
@@ -80,7 +83,7 @@ nav ul li.active a {
 }
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
+    padding: 0;
     min-height: 10rem;
     margin-bottom: 20px;
 }
@@ -94,6 +97,7 @@ main {
 .grid{
     display: grid;
     grid-template-columns: 1fr;
+    
 }
 
 /*----------- FOOTER --------------*/
@@ -127,3 +131,119 @@ padding: 14px;
 }
 div.showme{display: block;}
 div.hideme{display: none;}
+.images{
+    width: 300px;
+    height: 400px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.flex1{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column-reverse;
+    margin-right: 407px;
+}
+.flex2{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column;
+    margin-right: 407px;  
+}
+.flex3{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column-reverse;
+    margin-right: 407px;
+}
+.flex4{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column;
+    margin-right: 407px;
+}
+.flex5{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column-reverse;
+    margin-right: 407px;
+}
+.flex1 > p{
+    font-size: 50px;
+    padding: 25px;
+    background-color: rgb(244, 239, 75);
+    margin-bottom: 157px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-bottom: 3px solid rgb(204, 4, 4);
+}
+.flex2 > p{
+    font-size: 50px;
+    padding: 25px;
+    background-color: rgb(244, 239, 75);
+    margin-bottom: 218px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-bottom: 3px solid rgb(204, 4, 4);
+
+}
+.flex3 > p{
+    font-size: 50px;
+    padding: 25px;
+    background-color: rgb(244, 239, 75);
+    margin-bottom: 218px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-bottom: 3px solid rgb(204, 4, 4);
+}
+.flex4 > p{
+    font-size: 50px;
+    padding: 25px;
+    background-color: rgb(244, 239, 75);
+    margin-bottom: 218px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-bottom: 3px solid rgb(204, 4, 4);
+}
+.flex5 > p{
+    font-size: 50px;
+    padding: 25px;
+    background-color: rgb(244, 239, 75);
+    margin-bottom: 218px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-bottom: 3px solid rgb(204, 4, 4);
+}
+img:hover{
+    mix-blend-mode: difference;
+}
+.out_of_ideas{
+    background-color: #aaa;
+    text-align: center;
+}
+.out_of_ideas2{
+    background-color: rgb(54, 70, 143);
+    text-align: center;
+    color: #ddd;
+    margin-left: 250px;
+    margin-right: 250px;
+    height: 60px;
+    padding: 11px;
+    font-size: 30px;
+}

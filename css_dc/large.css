@@ -1,6 +1,8 @@
 /* 64em is also 1028px (if basefont is 16px) */
 @media only screen and (min-width: 64rem) {
-
+body{
+    margin: 0;
+}
     header, nav, main, footer {
         max-width: 64rem;
         margin:auto;
@@ -41,12 +43,46 @@ gap: 20px;
     display: grid;
     grid-template-columns: 1fr;
 }
-.flex{
+.flex5{
     display: flex;
     background-color: grey;
     margin: 20px;
     padding:40px;
     column-gap: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.flex1{
+    display: flex;
+    background-color: grey;
+    margin: 20px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: row;
+}
+.flex2{
+    display: flex;
+    background-color: grey;
+    margin: 20px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: row;
+}
+.flex3{
+    display: flex;
+    background-color: grey;
+    margin: 20px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: row;
+}
+.flex4{
+    display: flex;
+    background-color: grey;
+    margin: 20px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: row;
 }
 .flex > p{
     font-size: 35px;

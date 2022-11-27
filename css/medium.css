@@ -82,7 +82,7 @@
         height: auto;
     }
     footer {
-        background-color: #ddd;
+        
         padding: .5rem 2%;
         display: flex;
       flex-direction: row;
@@ -102,8 +102,11 @@
         display: inline;
         margin: 0 10px;
     }
-
-    #cards {
+    .new{
         grid-template-columns: 1fr 1fr;
-    }  
+      }
+      .newid{
+        display: flex;
+        flex-direction: column;
+      }
     } /* end of media query */

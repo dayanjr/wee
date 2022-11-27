@@ -10,15 +10,19 @@ body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
     margin: 0;
+    background-color: #131f45;
 }
 
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: rgb(255, 66, 66);
+    background-color: rgb(37, 56, 199);
 display: grid;
 grid-template-columns: 75px auto;
+color: rgb(242, 242, 242);
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
 }
 header div{margin-left: 70px;}
 header h1 {margin: 0;}
@@ -35,6 +39,7 @@ header h2 {margin: 0; font-weight: normal;}
 }
 .logo{
     max-width: 120px;
+    border-radius: 50%;
 }
 /*----------- NAVIGATION --------------*/
 nav {
@@ -162,16 +167,21 @@ main {
     grid-row: 7;
     height: auto;
 }
-  
+  .pt{
+    color: rgb(242, 242, 242);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    
     padding: .5rem 2%;
     display: flex;
   flex-direction: column;
   align-items: center;
-
+  color: rgb(242, 242, 242);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  background-color: rgb(37, 56, 199);
 }
 .box{
     background-color: aquamarine;
@@ -181,8 +191,12 @@ footer {
     padding: 7px;
 }
 a:hover {
-    background-color: yellow;
+    text-decoration: underline;
   }
+a{
+    color: #eee;
+    text-decoration: none;
+}
 .icons{
     width: 50px;
 }
@@ -248,102 +262,60 @@ form label.top input:required{
 form label.top input:required:valid{
     border-left: green solid 6px;
 }
-/* HTML Selectors */
-/*article {
-/*    margin: 10px;
-/*    background-color: rgb(128, 92, 49);
-/*}
-/*
-/*h3{
-/*    color: rgb(45, 45, 141);
-/*    font-size: 45px;
-/*}
-/*body {
-/*    font-family: 'Kalam', cursive;
-/*}
-/*
-/*div {
-/*    margin: 10px;
-/*    text-align: center;
-/*    display: grid;
-/*    background-color: beige;
-/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-/*}
-/*
-/*footer {
-/*    background-color: gray;
-/*    color: white;
-/*    padding: 5px;
-/*    text-align: center;
-/*}
-/*
-/*header {
-/*    margin: auto;
-/*    text-align: center;
-/*}
-/*
-/*img {
-/*    width: 80%;
-/*}
-/*
-/*label {
-/*    display: inline-block;
-/*    min-width: 120px;
-/*    text-align: right;
-/*}
-/*
-/*main {
-/*    text-align: center;
-/*}
-/*
-/*nav {
-/*    background-color: black;
-/*    color: white;
-/*}
-/*
-/*nav ul {
-/*    display: flex;
-/*    flex-direction: column;
-/*    justify-content: center;
-/*    align-content: space-around;
-/*    margin: 0;
-/*    padding: 0;
-/*}
-/*
-/*nav ul li:first-child {
-/*    display: block;
-/*}
-/*
-/*nav ul li {
-/*    display: none;
-/*    list-style: none;
-/*    margin: 10px;
-/*}
-/*
-/*nav ul li a {
-/*    color: white;
-/*    display: block;
-/*    padding: 10px;
-/*    text-decoration: none;
-/*}
-/*nav ul li a:hover {
-/*    background-color: #efefef;
-/*    color: black;
-/*}
-/*
-/*
-/*.active {
-/*    background-color: white;
-/*    color: black;
-/*}
-/*
-/*.open li {
-/*    display: block;
-/*}
-/*
-/*
-/*#cards {
-/*    display: grid;
-/*    grid-template-columns: 1fr;
-/*}
-/*
+.new{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px;
+}
+.new{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px;
+}
+.grid-container > div {
+    background-color: rgb(241 222 222 / 80%);
+    padding: 20px 0;
+    font-size: 30px;
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  
+.new > article {
+    margin: 10px;
+    background-color: rgb(128, 92, 49);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 12px;
+    max-width: 300px;
+   max-height: 300px;
+   padding: 18px;
+
+}
+.newid > article {
+    margin: 10px;
+    background-color: rgb(128, 92, 49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    max-width: 1000px;
+   max-height: 300px;
+   padding: 18px;
+
+}
+
+.newid > article > img{
+    display: none;
+    max-width: 80px;
+}
+
+h3{
+    color: rgb(45, 45, 141);
+    font-size: 20px;
+}
+.newid > article > h4{
+   padding: 20px;
+}

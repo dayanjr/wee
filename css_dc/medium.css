@@ -41,6 +41,9 @@
       flex-direction: row;
       gap: 20px;
       }
+    img:hover{
+        mix-blend-mode: difference;
+    }
     
     /*----------- FOOTER --------------*/
         

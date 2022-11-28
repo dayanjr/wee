@@ -1,5 +1,5 @@
-const buttonElement = document.getElementById("submit");
-const buttonElement2 = document.getElementById("submit2");
+const buttonElement = document.getElementById("list");
+const buttonElement2 = document.getElementById("grid");
 
 
 function copyInput() {

@@ -51,41 +51,37 @@
                     <label class="top">
                         Email*<input type="email" name="email" placeholder="someone@gmail.com" required> 
                     </label>
+                </fieldset>
+                <fieldset>
+                    <legend>business info</legend>
                     <label class="top">
-                        Website<input type="url" name="url" placeholder="http://"> 
+                        Business Address<input type="text" name="b/a" placeholder=""> 
+                    </label>
+                    <label class="top">
+                        Business Name/Title<input type="text" name="bn/t" required> 
+                    </label>
+                    <label class="top">
+                        Business Website<input type="url" name="bw" placeholder="http://..."> 
+                    </label>
+
+                    <label id="desc2" class="top">
+                        Business Description<textarea class="desc" type="text" name="bd"></textarea>
                     </label>
                 </fieldset>
                 <fieldset>
-                    <legend>Course Information</legend>
-                    <div>audience</div>
-                    <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</label>
-                    <label class="sbs"><input type="radio" name="audience" value="intermidiate">intermidiate</label>
-                    <label class="sbs"><input type="radio" name="audience" value="advanced">advanced</label>
-                    <div>software needed</div>
+                        <legend>Membership</legend>
+                    <div>Membership-level</div>
+                    <label class="sbs"><input type="radio" name="audience" value="beginner">Non-profit(For Non Profit Organizations - No Fee)</label>
+                    <label class="sbs"><input type="radio" name="audience" value="intermidiate">Bronze(Regular Membership Benefits - $50)</label>
+                    <label class="sbs"><input type="radio" name="audience" value="advanced">Silver(Regular Membership + Exclusive V.I.P Service- $100)</label>
+                    <label class="sbs"><input type="radio" name="audience" value="advanced">Gold(All Silver Membership Privileges +  Additional High Quality Content- $200)</label>
+                    <!--<div>software needed</div>
                     <label class="sbs"><input type="checkbox" name="editting" value="yes">Photo Editting</label>
                     <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
                     <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
-                    <label class="sbs"><input type="checkbox" name="client" value="yes">FTP client</label>
+                    <label class="sbs"><input type="checkbox" name="client" value="yes">FTP client</label>-->
                 </fieldset>
-                <fieldset>
-                    <legend>funding</legend>
-                    <label class="top" >Anticipated completion date<input type="date" name="completeDate"></label>
-                    <label class="top" >course subject
-                        <select name="subject">
-                            <option value="">please select &#9662;</option>
-                            <option value="software">software development</option>
-                            <option value="creative">creative professional</option>
-                            <option value="info">information technology</option>
-                            <option value="data">data professional</option>
-                            <option value="construction">construction</option>
-                            <option value="manufactoring">manufactoring</option>
-                            <option value="business">bussines professional</option>
-                            <option value="security">cyber security</option>
-                        </select>
-                    </label>
-                    <label class="top">how many authors<input type="number" name="authors"></label>
-                </fieldset>
-                <input type="submit" value="Apply Course" class="submitBtn">
+                <input type="submit" value="Join" class="submitBtn">
             </form>
         </div>
     </main>
@@ -106,9 +102,6 @@
         <div class="flex-container2">
             <p class="a">&copy;<span id="demo2"></span> .:|:.Dayan F. Frazao .:|:. WDD 230 project</p>
             <p class="f">last update: <span id="d2"></span></p>
-    
-        <script src="scripts/index.js">
-            </script>
         </div>
         <script src="js/weather.js"></script>
         <script src="js/date.js">

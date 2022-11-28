@@ -6,6 +6,18 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 
 /*----------- BODY --------------*/
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+#grid, #list{
+    width: 80px;
+    height: 41px;
+}
+article > h3{
+    margin:30px
+}
 body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
@@ -333,14 +345,17 @@ padding: 14px;
 div.showme{display: block;}
 div.hideme{display: none;}
 /*------form--------*/
+.top textarea{
+    display: block;
+}
 form fieldset{
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid #d6def7;
     border-radius: 10px;
     padding: .5rem 2%;
 }
 form legend {
-    color: #445ba9;
+    color: #d6def7;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -357,15 +372,15 @@ form label.top input, form label.top select{
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
-    color: #555;
+    color: rgb(0, 0, 0);
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(247, 243, 243,);
 }
 form label.sbs{
     display: block;
     padding: .75rem 0;
-    color: #555;
+    color: rgb(168, 167, 167);
 }
 form input.submitBtn{
     border: none;
@@ -407,6 +422,7 @@ form label.top input:required:valid{
     max-width: 300px;
    max-height: 300px;
    padding: 11px;
+   border-radius: 20px;
 
 }
 .newid > article {
@@ -419,7 +435,19 @@ form label.top input:required:valid{
     max-width: 1000px;
    max-height: 300px;
    padding: 18px;
+   border-radius: 20px;
 
+}
+#desc2{
+height: 130px;
+}
+.desc{
+height: 80px;
+width: 318px;
+}
+.pool{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .newid > article > img{
@@ -429,7 +457,7 @@ form label.top input:required:valid{
 
 h3{
     color: rgb(45, 45, 141);
-    font-size: 20px;
+    font-size: 14px;
 }
 .newid > article > h4{
    padding: 20px;

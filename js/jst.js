@@ -18,19 +18,20 @@ function copyInput() {
           
               let location = document.createElement("h4");
               location.textContent = `${prophet.phone_number}`;
-              let link_adress = document.createElement("h4");
-              location.textContent = `${prophet.URL}`;
+              let link_adress = document.createElement("a");
+              link_adress.setAttribute("href", prophet.URL);
+              link_adress.textContent = `${prophet.URL}`;
           
               let img = document.createElement("img");
               img.setAttribute("src", prophet.link_adress);
               console.log(prophet.imageUrl)
               img.setAttribute("alt", prophet.name);
-              
+              article.appendChild(link_adress);
               article.appendChild(prophetName);
               article.appendChild(date);
               article.appendChild(location);
+              
               article.appendChild(img);
-              article.appendChild(link_adress);
           
               document.querySelector("#cards").appendChild(article);
               date.setAttribute("class", "color"); 

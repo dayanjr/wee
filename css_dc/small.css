@@ -10,6 +10,7 @@ body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
     margin: 0;
+    background-color: #131f45;
 }
 .grid{
     display: grid;
@@ -31,9 +32,12 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: rgb(255, 66, 66);
+    background-color: rgb(37, 56, 199);
 display: grid;
 grid-template-columns: 75px auto;
+color: rgb(242, 242, 242);
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
 }
 header div{margin-left: 70px;}
 header h1 {margin: 0;}
@@ -50,6 +54,7 @@ header h2 {margin: 0; font-weight: normal;}
 }
 .logo{
     max-width: 120px;
+    border-radius: 50%;
 }
 /*----------- NAVIGATION --------------*/
 .active{
@@ -114,25 +119,30 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    
     padding: .5rem 2%;
     display: flex;
   flex-direction: column;
   align-items: center;
-
+  color: rgb(242, 242, 242);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  background-color: rgb(37, 56, 199);
 }
 .box{
-    background-color: aquamarine;
-    opacity: 0.5;
-    margin: 65px;
-    height: 90px;
-    padding: 7px;
+    background-color: #11fc38bc;
+    font-size: 30px;
+    margin: auto;
+    width: auto;
+    border-radius: 15px;
+    padding: 5%;
+    justify-content: center;
 }
 a:hover {
-    background-color: yellow;
+    text-decoration: underline;
   }
-.icons{
-    width: 50px;
+a{
+    color: #eee;
+    text-decoration: none;
 }
 div#message{background-color: red;
     color: #fff;

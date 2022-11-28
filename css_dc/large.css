@@ -23,15 +23,14 @@ main{
 .links{
     margin-left: 480px;
 }
-
 footer {
-  background-color: #ddd;
-  padding: .5rem 2%;
-  display: flex;
-flex-direction: row;
-align-items: flex-start;
-gap: 20px;
-}
+  
+    padding: .5rem 2%;
+    display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  }
 .p{
   margin-top: 10px;
 }

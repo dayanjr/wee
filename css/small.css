@@ -264,33 +264,32 @@ main {
   }
 
 /*----------- FOOTER --------------*/
-.flex-container {
+.flex-container2 {
     display: flex;
-    background-color: DodgerBlue;
-    height: 250px;
+    column-gap: 5px;
+    height: auto;
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgb(26 25 25);
+    margin-left: 160px;
   }
-  .flex-container > div {
+  .flex-container2 > div {
     margin: 10px;
     padding: 20px;
     font-size: 30px;
   }
   .a{
     color: azure;
-    font-size: 25px;
+    font-size: 15px;
   }
   .a > #demo2{color: azure;
-  font-size: 25px;}
+  font-size: 15px;}
   a{margin: 0;}
  .f > #d2{
   color: rgb(245, 252, 154);
-  font-size: 20px;
+  font-size: 15px;
  }
  .f{
   color:rgb(245, 252, 154);
-  font-size: 20px;
+  font-size: 15px;
  }
 .footer {
     
@@ -301,6 +300,9 @@ main {
   color: rgb(242, 242, 242);
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   background-color: rgb(37, 56, 199);
+}
+footer{
+    background-color: rgb(37, 56, 199);
 }
 .box{
     background-color: #11fc38bc;

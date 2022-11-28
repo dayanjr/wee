@@ -34,14 +34,14 @@ const str = new Intl.DateTimeFormat("en", {
     timeStyle:"medium",
     dateStyle:"short"}).format(date2);
 document.getElementById("d2").innerHTML = str
-try {
-    let options = {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-        year: "numeric"
-    };
-    document.getquerySelector("currentdate2").textContent = new Date().toLocaleDateString("en-US", options);
- } catch (e) {
-    alert("Error with code or your browser does not support Locale")
- }
+//try {
+//    let options = {
+//        weekday: "long",
+//        day: "numeric",
+//        month: "long",
+//        year: "numeric"
+//    };
+//    document.getquerySelector("currentdate2").textContent = new Date().toLocaleDateString("en-US", options);
+// } catch (e) {
+//    alert("Error with code or your browser does not support Locale")
+// }

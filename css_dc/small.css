@@ -118,7 +118,34 @@ main {
 }
 
 /*----------- FOOTER --------------*/
-footer {
+.flex-container2 {
+    display: flex;
+    column-gap: 5px;
+    height: auto;
+    text-align: center;
+    margin-left: 160px;
+  }
+  .flex-container2 > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .a{
+    color: azure;
+    font-size: 15px;
+  }
+  .a > #demo2{color: azure;
+  font-size: 15px;}
+  a{margin: 0;}
+ .f > #d2{
+  color: rgb(245, 252, 154);
+  font-size: 15px;
+ }
+ .f{
+  color:rgb(245, 252, 154);
+  font-size: 15px;
+ }
+.footer {
     
     padding: .5rem 2%;
     display: flex;
@@ -126,7 +153,9 @@ footer {
   align-items: center;
   color: rgb(242, 242, 242);
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-  background-color: rgb(37, 56, 199);
+}
+footer{
+    background-color: rgb(37, 56, 199);
 }
 .box{
     background-color: #11fc38bc;

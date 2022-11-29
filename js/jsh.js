@@ -7,15 +7,21 @@ function copyInput() {
            let first = document.createElement("h3")
            first.textContent = prophet.name
            let logo = document.createElement("img");
+           //images/Screenshot(196).png
            logo.setAttribute("src", prophet.link_adress);
            console.log(prophet.imageUrl)
            logo.setAttribute("alt", prophet.name);
+           logo.setAttribute("data-src", prophet.link_adress);
+           logo.setAttribute("loading", "lazy");
+           logo.setAttribute("class", "lazy");
+           let pi = document.createElement("picture");
+           pi.appendChild(logo);
            let indereco = document.createElement("h4");
            indereco.textContent = `${prophet.address}`;
            let phone = document.createElement("h4");
              phone.textContent = `${prophet.phone_number}`;
              art.appendChild(first);
-             art.appendChild(logo);
+             art.appendChild(pi);
              art.appendChild(indereco);
              art.appendChild(phone);
              document.querySelector(".item3").appendChild(art); 

@@ -519,7 +519,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: #e68b77;
     font-size: .8rem;
 }
 
@@ -557,7 +557,7 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left: rgb(237, 0, 0) solid 6px;
 }
 
 form label.top input:required:valid {

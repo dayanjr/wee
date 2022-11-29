@@ -473,7 +473,7 @@ a {
 }
 
 div#message {
-    background-color: red;
+    background-color: rgb(68, 0, 0);
     color: #fff;
     height: auto;
     text-align: center;

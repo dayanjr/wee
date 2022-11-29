@@ -225,7 +225,6 @@ nav ul li.active a {
     flex-direction: column;
     border-radius: 20px;
     width: auto;
-    padding: auto;
 }
 
 .coisa3 {
@@ -337,7 +336,7 @@ main {
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-.i {
+figcaption {
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -450,9 +449,16 @@ footer {
     padding: 5%;
     justify-content: center;
 }
-
+.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+.mapouter{position:relative;text-align:right;height:500px;width:600px;}
 a:hover {
     text-decoration: underline;
+}
+iframe{
+    width: 600px;
+    height: 500px;
+    border: none;
+    margin: 0;
 }
 .links{
     font-family: 'roboto', sans-serif;
@@ -526,7 +532,7 @@ form label.top select {
     color: rgb(0, 0, 0);
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(247, 243, 243, );
+    background-color: rgba(247, 243, 243);
 }
 
 form label.sbs {
@@ -540,7 +546,7 @@ form input.submitBtn {
     background-color: #9c2c13;
     color: #eee;
     border-radius: 1rem;
-    padding: .75re 1.5rem;
+    padding: 1.5rem;
     margin: 49px 0 2rem 2%;
     width: 96%;
     max-width: 20rem;

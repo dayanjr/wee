@@ -86,6 +86,6 @@ main{
 .flex > p{
     font-size: 35px;
 }
-img:hover{
+picture > img:hover{
     mix-blend-mode: difference;
 }}

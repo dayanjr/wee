@@ -33,7 +33,7 @@
     
     /*----------- MAIN --------------*/
     
-    img:hover{
+    picture > img:hover{
         mix-blend-mode: difference;
     }
     

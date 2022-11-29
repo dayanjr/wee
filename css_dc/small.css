@@ -48,7 +48,7 @@ header div{margin-left: 70px;}
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
 .date{
-    background-color: #aaa;
+    background-color: rgb(74, 74, 74);
     padding: 10px;
     margin: auto;
     margin-top: 10px;

@@ -152,7 +152,7 @@ nav ul li.active a {
 .dirg{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr;
+    grid-template-rows: 1fr;
 }
 .coisa1{
     grid-column: 1/2;
@@ -172,6 +172,7 @@ nav ul li.active a {
     grid-row: 1;
     width: auto;
     margin: 40px;
+
 }
 .weather_icon{
     width: 60px;
@@ -467,7 +468,7 @@ height: 130px;
 }
 .desc{
 height: 80px;
-width: 318px;
+width: 275px;
 }
 .pool{
     display: grid;

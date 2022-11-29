@@ -49,6 +49,7 @@ header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
 .date{
     background-color: rgb(74, 74, 74);
+    font-family: 'roboto', sans-serif;
     padding: 10px;
     margin: auto;
     margin-top: 10px;

@@ -479,6 +479,8 @@ div#message {
     text-align: center;
     margin: 20px;
     padding: 7px;
+    font-family: 'roboto', sans-serif;
+
 }
 .new .color{
     font-size: 8px;

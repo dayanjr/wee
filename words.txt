@@ -1,5 +1,0 @@
-horse
-panda
-sheep
-tiger
-snake

@@ -31,3 +31,4 @@ if (numVisits !== 0){
 numVisits++;
 localStorage.setItem("visits", numVisits);
 todayDisplay.textContent = Date.now();
+//other storage

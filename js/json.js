@@ -1,3 +1,4 @@
+
 //let companies = 
 //`[
 //    {
@@ -14,25 +15,21 @@
 //    }
 //    
 //]`
-const displayCompanies = (dataCompanies) => {
-    dataProphets.prophets.forEach ( 
-      prophet => {
+const displayCompanies = (dataFruits) => {
+    dataFruits.fruits.forEach ( 
+      fruits => {
           let article = document.createElement("article");
       
           let prophetName = document.createElement("h3");
-          prophetName.textContent = prophet.name;
-          console.log(prophet)
+          prophetName.textContent = fruits.name;
+          console.log(fruits)
       
           let date = document.createElement("h4");
-          date.textContent = `location: ${prophet.birthdate}`;
+          date.textContent = `location: ${fruits.genus}`;
       
           let location = document.createElement("h4");
-          location.textContent = `birth place: ${prophet.birthplace}`;
+          location.textContent = `birth place: ${fruits.genus}`;
       
-          let img = document.createElement("img");
-          img.setAttribute("src", prophet.imageurl);
-          console.log(prophet.imageUrl)
-          img.setAttribute("alt", prophet.name);
       
           article.appendChild(prophetName);
           article.appendChild(date);
@@ -44,14 +41,14 @@ const displayCompanies = (dataCompanies) => {
       };
       const getlatter_day_prophets = async () => {
         const response = await fetch(
-          "json/data.json"
+          "json/fruits.json"
         );
-        prophetList = await response.json();
-        displayProphets(prophetList);
+        fruitList = await response.json();
+        displayfruits(fruitList);
       };
       getlatter_day_prophets();
-const requestURL = 'json/data.json';
-fetch('json/data.json')
+const requestURL = 'json/f.json';
+fetch('json/f.json')
   .then((response) => response.json())
   .then((data) => console.log(data));
   console.log(data);

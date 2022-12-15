@@ -26,66 +26,82 @@
     <nav>
         <button id="ham">&#9776;</button>
         <ul id="pn">
+            <li><a href=""></a></li>
             <li><a href="index.html">Home-page</a></li>
-            <li><a href="index.html">Home-page</a></li>
-            <li><a href="dicoverychannel.html">Discover</a></li>
-            <li ><a href="directory.html">Directory</a></li>
-            <li class="active"><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>    
+            <li class="active"><a href="join.html">Fresh-Page</a></li>
+            <li><a href="contact.html">Contact Us</a></li>    
         </ul>
     </nav>
 
-    <main>
-        <div>
-            <form method="get" action="thanks.html">
-                <fieldset>
-                    <legend>applicant info</legend>
-                    <label class="top">
-                        First Name*<input type="text" name="fname" required> 
-                    </label>
-                    <label class="top">
-                        Last Name*<input type="text" name="fname" required> 
-                    </label>
-                    <label class="top">
-                        phone<input type="tel" name="phone" placeholder="12345666"> 
-                    </label>
-                    <label class="top">
-                        Email*<input type="email" name="email" placeholder="someone@gmail.com" required> 
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <legend>business info</legend>
-                    <label class="top">
-                        Business Address<input type="text" name="b/a" placeholder=""> 
-                    </label>
-                    <label class="top">
-                        Business Name/Title<input type="text" name="bn/t" required> 
-                    </label>
-                    <label class="top">
-                        Business Website<input type="url" name="bw" placeholder="http://..."> 
-                    </label>
+    <main> 
+        <h1 class="h">Fresh-Page</h1>
 
-                    <label id="desc2" class="top">
-                        Business Description<textarea class="desc" name="bd"></textarea>
-                    </label>
-                </fieldset>
-                <fieldset>
-                        <legend>Membership</legend>
-                    <div>Membership-level</div>
-                    <label class="sbs"><input type="radio" name="audience" value="beginner">Non-profit(For Non Profit Organizations - No Fee)</label>
-                    <label class="sbs"><input type="radio" name="audience" value="intermidiate">Bronze(Regular Membership Benefits - $50)</label>
-                    <label class="sbs"><input type="radio" name="audience" value="advanced">Silver(Regular Membership + Exclusive V.I.P Service- $100)</label>
-                    <label class="sbs"><input type="radio" name="audience" value="advanced">Gold(All Silver Membership Privileges +  Additional High Quality Content- $200)</label>
-                    <!--<div>software needed</div>
-                    <label class="sbs"><input type="checkbox" name="editting" value="yes">Photo Editting</label>
-                    <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
-                    <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
-                    <label class="sbs"><input type="checkbox" name="client" value="yes">FTP client</label>-->
-                </fieldset>
-                <input type="submit" value="Join" class="submitBtn">
+        <div class="div">
+
+            <form>
+            
+                <label for="fname" class="top">Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John">
+                <label for="phone"class="top">phone</label>
+                <input type="text" id="phone" name="phone" placeholder="666-6666">
+                <label for="email"class="top">email</label>
+                <input type="text" id="email" name="email" placeholder="Doe@gmail.com">
+                <label class="top">
+                    <div class="custom-select">
+                        <select id="favchap" placeholder="select your fruit">
+                            <option value="0">click here to select your fruit</option>
+                        </select>
+                      </div>
+                </label>
+                <label class="top">
+                    <div class="custom-select">
+                        <select id="favchap2" placeholder="select your fruit">
+                            <option value="0">click here to select your fruit</option>
+                        </select>
+                      </div>
+                </label>
+                <label class="top">
+                    <div class="custom-select">
+                        <select id="favchap3" placeholder="select your fruit">
+                            <option value="0">click here to select your fruit</option>
+                        </select>
+                      </div>
+                </label>
+              
             </form>
         </div>
+        <div>
+           
+                   
+                <section><div><button onclick="clickCounter()" id="submit">finish order</button></div></section>
+
     </main>
+    <section id="detisenhorcareco">
+        <div>
+            <h1 id="first_line" class="h"></h1>
+        </div>
+        <div>
+            <p id="second_line"></p>
+        </div>
+        <div>
+            <p id="third_line"></p>
+        </div>
+        <div>
+            <p id="fourth_line"></p>
+        </div>
+        <div>
+            <p id="fifth_line"></p>
+        </div>
+        <div>
+            <p id="sixth_line"></p>
+        </div>
+        <div>
+            <p id="seventh_line"></p>
+        </div>
+        <div>
+            <p id="eight_line"></p>
+        </div>
+    </section>
  
     <footer>
         <div class="footer">
@@ -106,16 +122,19 @@
             <p class="a">&copy;<span id="demo2"></span> .:|:.Dayan F. Frazao .:|:. WDD 230 project</p>
             <p class="f">last update: <span id="d2"></span></p>
         </div>
-        <script src="js/weather.js"></script>
         <script src="js/date.js">
         </script>
+        <!--<script src="js/dropdown.js"></script>-->
         <script src="js/id.js">
-        </script>
-        <script src="js/ws.js">
         </script>
         <script src="js/jsh.js">
         </script>
-        <!---<script src="js/ws.js"></script>--->
+        <script src="js/donotdeletethis.js">
+        </script>
+        
+        <script src="js/jst.js">
+        </script>
+        
        
     </footer>
 

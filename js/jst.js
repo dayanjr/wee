@@ -2,44 +2,32 @@ const buttonElement = document.getElementById("list");
 const buttonElement2 = document.getElementById("grid");
 
 
+
 function copyInput() {
     const displayProphets = (dataProphets) => {
         dataProphets.prophets.forEach ( 
           prophet => { 
-              document.getElementById("cards").className = "new";
-              let article = document.createElement("article");
+              let article = document.getElementById("favchap");
+              let article2 = document.getElementById("favchap2");
+              let article3 = document.getElementById("favchap3");
           
-              let prophetName = document.createElement("h3");
+              let prophetName = document.createElement("option");
+              let prophetName2 = document.createElement("option");
+              let prophetName3 = document.createElement("option");
               prophetName.textContent = prophet.name;
-              console.log(prophet)
-          
-              let date = document.createElement("h4");
-              date.textContent = `${prophet.address}`;
-          
-              let location = document.createElement("h4");
-              location.textContent = `${prophet.phone_number}`;
-              let link_adress = document.createElement("a");
-              link_adress.setAttribute("href", prophet.URL);
-              link_adress.textContent = `${prophet.URL}`;
-          
-              let img = document.createElement("img");
-              img.setAttribute("src", prophet.link_adress);
-              console.log(prophet.imageUrl)
-              img.setAttribute("alt", prophet.name);
-              article.appendChild(link_adress);
+              prophetName2.textContent = prophet.name;
+              prophetName3.textContent = prophet.name;
+              console.log(prophet.textContent)
+             
               article.appendChild(prophetName);
-              article.appendChild(date);
-              article.appendChild(location);
-              
-              article.appendChild(img);
-          
-              document.querySelector("#cards").appendChild(article);
-              date.setAttribute("class", "color"); 
+              article2.appendChild(prophetName2);
+              article3.appendChild(prophetName3);
+
             });
           };
           const getlatter_day_prophets = async () => {
             const response = await fetch(
-              "json/data.json"
+              "json/f.json"
             );
             prophetList = await response.json();
             displayProphets(prophetList);

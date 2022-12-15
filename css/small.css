@@ -227,10 +227,6 @@ nav ul {
 nav ul.open {
     display: block;
 }
-.logo:hover{
-    background-color: white;
-   color: white;
-}
 nav ul li a {
     display: block;
     color: #eee;
@@ -582,10 +578,35 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #fdcdc2;
+    color: #373534;
     font-size: .8rem;
+    
 }
+.s-l:hover:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 
+
+}
+#logo:hover{
+    background-color: #cfcfcf;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 form label.top input,
 form label.top select {
     -webkit-appearance: none;

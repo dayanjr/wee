@@ -1,4 +1,4 @@
 function show(){
-    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    document.getElementById("result").innerHTML = "You have ordered " + localStorage.clickcount + "drink(s) so far.";
 }
 show();

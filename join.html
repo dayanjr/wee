@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="description" content="Fill Me In">
 <meta name="author" content="Dayan Frazao">
-<title>Goiania chamber of commerce's form</title>
+<title>Bountiful Foods</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="css/normalize.css" rel="stylesheet">
@@ -19,17 +19,17 @@
 <body>
 	<header>
         <a href="index.html"><img src="css/newl.png" alt="logo" class="logo"></a>
-    <div><h1>Goiania chamber of commerce</h1>
-        <h2>"If you know it, you know it, if you don't know it, you don't know it."</h2></div>
+    <div><h1>Bountiful Foods</h1>
+        <h2>"Fresh fruits and drinks available to everyone."</h2></div>
         <nav class="date">  <span id="omed">  </span>, <span id="om">  </span> <span id="o">  </span>, <span id="year">  </span></nav>
     </header>
     <nav>
         <button id="ham">&#9776;</button>
         <ul id="pn">
-            <li><a href=""></a></li>
-            <li><a href="index.html">Home-page</a></li>
+            <li><a href="index.html"></a></li>
+            <li><a href="index.html">Home-Page</a></li>
             <li class="active"><a href="join.html">Fresh-Page</a></li>
-            <li><a href="contact.html">Contact Us</a></li>    
+            <li><a href="dicoverychannel.html">About Us</a></li>    
         </ul>
     </nav>
 
@@ -42,40 +42,45 @@
             
                 <label for="fname" class="top">Name</label>
                 <input type="text" id="fname" name="fname" placeholder="John">
-                <label for="phone"class="top">phone</label>
+                <label for="phone" class="top">phone</label>
                 <input type="text" id="phone" name="phone" placeholder="666-6666">
-                <label for="email"class="top">email</label>
+                <label for="email" class="top">email</label>
                 <input type="text" id="email" name="email" placeholder="Doe@gmail.com">
-                <label class="top">
+                <label for="spec" class="top">special specification</label>
+                <textarea id="spec" class="desc" name="bd"></textarea>
+                
                     <div class="custom-select">
-                        <select id="favchap" placeholder="select your fruit">
+                        <label for="favchap" class="top">first fruit</label>
+                        <select id="favchap">
                             <option value="0">click here to select your fruit</option>
                         </select>
                       </div>
-                </label>
-                <label class="top">
                     <div class="custom-select">
-                        <select id="favchap2" placeholder="select your fruit">
+                        <label for="favchap2" class="top">second fruit</label>
+                        <select id="favchap2">
                             <option value="0">click here to select your fruit</option>
                         </select>
                       </div>
-                </label>
-                <label class="top">
+                
                     <div class="custom-select">
-                        <select id="favchap3" placeholder="select your fruit">
+                        <label for="favchap3" class="top">third fruit</label>
+                        <select id="favchap3">
                             <option value="0">click here to select your fruit</option>
                         </select>
                       </div>
-                </label>
               
             </form>
         </div>
         <div>
            
                    
-                <section><div><button onclick="clickCounter()" id="submit">finish order.</button></div></section>
+                <section>
+                    <div>
+                        <button onclick="clickCounter()" id="submit">finish order</button>
+                    </div>
+                </section>
 
-    </main>
+       </div>
     <section id="detisenhorcareco">
         <div>
             <h1 id="first_line" class="h"></h1>
@@ -102,7 +107,7 @@
             <p id="eight_line"></p>
         </div>
     </section>
- 
+</main>
     <footer>
         <div class="footer">
             <div class="p">
@@ -118,19 +123,19 @@
             <p><a href="https://www.google.com/maps/place/Goi%C3%A2nia,+GO,+Brasil/@-16.6954999,-49.4443564,11z/data=!3m1!4b1!4m5!3m4!1s0x935ef6bd58d80867:0xef692bad20d2678e!8m2!3d-16.6868912!4d-49.2647943">link to map</a></p>
             <div class="social"> 
                 <a href="https://facebook.com" target="_blank">
-                <img src="css/facebook.png" alt="fb icon">
+                <img src="css/facebook.png" alt="fb icon" class="s-l">
             </a>
             <a href="https://twitter.com" target="_blank">
-            <img src="css/twitter.png" alt="twitter icon">
+            <img src="css/twitter.png" alt="twitter icon" class="s-l">
              </a>
              <a href="https://instagram.com" target="_blank">
-             <img src="css/instagram.png" alt="instagram icon"> 
+             <img src="css/instagram.png" alt="instagram icon" class="s-l"> 
              </a>
             </div>
         </div>
         </div>
 
-        </div>
+       
 
         <div class="flex-container2">
             <p class="a">&copy;<span id="demo2"></span> .:|:.Dayan F. Frazao .:|:. WDD 230 project</p>

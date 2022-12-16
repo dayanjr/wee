@@ -88,4 +88,10 @@ main{
 }
 picture > img:hover{
     mix-blend-mode: difference;
-}}
+}
+.gridizao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+}

@@ -32,6 +32,12 @@ p{
     font-size: 15px;
     background-color: #a3ffff;
 }
+.cli:hover{
+    background-color: #acf0af;
+}
+.cli2:hover{
+    background-color: #acf0af;
+}
 .cli2{
     width: 130px;
     height: 40px;
@@ -89,7 +95,7 @@ header {
     text-align: center;
     display: grid;
     grid-template-columns: 75px auto;
-    color: rgb(242, 242, 242);
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
 }
@@ -214,7 +220,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 nav ul {
@@ -247,7 +253,64 @@ nav ul li.active a {
     background-color: #000;
     color: #fff;
 }
-
+.syf{
+    margin-bottom: -26px;
+}
+.title{
+    color: rgb(255, 254, 254);
+    font-size: 30px;
+ }
+ .myphoto{
+    width: 50%;
+}
+.flex-container2 {
+    display: flex;
+    column-gap: 5px;
+    height: auto;
+    text-align: center;
+    margin-left: 160px;
+   
+  }
+  .flex-container2 > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .a{
+    color: azure;
+    font-size: 15px;
+  }
+  .a > #demo2{color: azure;
+  font-size: 15px;}
+  a{margin: 0;}
+ .f > #d2{
+  color: rgb(245, 252, 154);
+  font-size: 15px;
+ }
+ .flex1 {
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+      margin-right: 50px;
+    padding: 40px;
+    column-gap: 20px;
+    flex-direction: column-reverse;
+    margin-right: 407px;
+  }
+ .f{
+  color:rgb(245, 252, 154);
+  font-size: 15px;
+ }
+.im{width: 100%;}
+ .decoration{
+    font-size: 25px;
+    padding: 25px;
+    background-color: rgb(218, 218, 112);
+    margin-bottom: 157px;
+    color: rgb(134, 38, 38);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-bottom: 3px solid rgb(203, 77, 77);
+}
 /*----------- MAIN --------------*/
 .dirg {
     display: grid;
@@ -306,7 +369,7 @@ main {
 
 
 .grid-container>div {
-    background-color: rgba(215, 224, 133, 0.8);
+    background-color: rgb(244 244 244 / 90%);
     text-align: center;
     
 }
@@ -579,7 +642,7 @@ form div {
     display: block;
     padding-top: 1rem;
     color: #373534;
-    font-size: .8rem;
+    font-size: 20px;
     
 }
 .s-l:hover:hover{
@@ -588,7 +651,16 @@ form div {
 
 
 }
-#logo:hover{
+#submit:hover{
+background-color: #a3ffff;
+}
+#submit{
+    width: 166px;
+    height: 50px;
+    margin: 20px;
+    font-size: 20px;
+}
+.logo:hover{
     background-color: #cfcfcf;
     animation: shake 0.5s;
     animation-iteration-count: infinite;
@@ -619,6 +691,10 @@ form label.top select {
     width: 100%;
     max-width: 20rem;
     background-color: rgba(247, 243, 243);
+}
+#result{
+    background-color: #cfcfcf;
+    padding: 20px;
 }
 
 form label.sbs {
@@ -727,4 +803,190 @@ article>img {
 .social{
     display: flex;
     column-gap: 10px;
+}
+/*---*/
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+h1, h3{
+    font-family: 'roboto', sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.title{
+   color: rgb(255, 254, 254);
+   font-size: 30px;
+}
+.decoration{
+    font-size: 25px;
+    padding: 25px;
+    background-color: rgb(218, 218, 112);
+    margin-bottom: 157px;
+    color: rgb(134, 38, 38);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-bottom: 3px solid rgb(203, 77, 77);
+}
+/*----------- HEADER --------------*/
+header div{margin-left: 70px;}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0;
+    min-height: 10rem;
+    margin-bottom: 20px;
+}
+.myphoto{
+    width: 50%;
+}
+.im{width: 100%;}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+/*----------- FOOTER --------------*/
+.flex-container2 {
+    display: flex;
+    column-gap: 5px;
+    height: auto;
+    text-align: center;
+    margin-left: 160px;
+  }
+  .flex-container2 > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .a{
+    color: azure;
+    font-size: 15px;
+  }
+  .a > #demo2{color: azure;
+  font-size: 15px;}
+  a{margin: 0;}
+ .f > #d2{
+  color: rgb(245, 252, 154);
+  font-size: 15px;
+ }
+ .f{
+  color:rgb(245, 252, 154);
+  font-size: 15px;
+ }
+.footer {
+    
+    padding: .5rem 2%;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(242, 242, 242);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-family: 'roboto', sans-serif;
+}
+.links{
+    font-family: 'roboto', sans-serif;
+}
+.box{
+    background-color: #11fc38bc;
+    font-size: 30px;
+    margin: auto;
+    width: auto;
+    border-radius: 15px;
+    padding: 5%;
+    justify-content: center;
+}
+a:hover {
+    text-decoration: underline;
+  }
+a{
+    color: #eee;
+    text-decoration: none;
+}
+div#message{background-color: red;
+    color: #fff;
+height: 50px;
+text-align: center;
+margin: 20px;
+padding: 14px;
+}
+div.showme{display: block;}
+div.hideme{display: none;}
+.images{
+    width: 300px;
+    height: 400px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.flex1{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column-reverse;
+    margin-right: 407px;
+}
+.flex2{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column;
+    margin-right: 407px;  
+}
+.flex3{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column-reverse;
+    margin-right: 407px;
+}
+.flex4{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column;
+    margin-right: 407px;
+}
+.flex5{
+    display: flex;
+    background-color: grey;
+    margin: 50px;
+    padding:40px;
+    column-gap: 20px;
+    flex-direction: column-reverse;
+    margin-right: 407px;
+}
+.out_of_ideas{
+    margin-top: 20px;
+    background-color: #aaa;
+    text-align: center;
+    padding: 15px;
+}
+.out_of_ideas2{
+    background-color: rgb(54, 70, 143);
+    text-align: center;
+    color: #ddd;
+    
+    padding: 11px;
+    font-size: 30px;
 }

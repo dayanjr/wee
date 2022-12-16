@@ -100,9 +100,11 @@ function cc3(userinput){const getfruits = async () => {
      clientname = document.getElementById("fname").value;
      clientname_phone = document.getElementById("phone").value;
      clientname_email = document.getElementById("email").value;
+    clientname_s = document.getElementById("spec").value;
      //console.log("merda",totalidade);
      //console.log("omg", soma3);
      console.log("client_name", clientname);
+    console.log("client_name", clientname_s);
      console.log("fruitname", first_fruit);
      console.log("fruitname2", second_fruit);
      console.log("fruitname3", third_fruit);
@@ -133,7 +135,8 @@ l4.append(`Order details:
   l6.append(`client info:`);
   l5.append(`-client name:${clientname}.
     -client phone number:${clientname_phone}.
-    -client email:${clientname_phone}.`);
+    -client email:${clientname_phone}.
+    -client special specifications:${clientname_s}.`);
   l6.append(` Thank you for your order.
   Order date and time: ${d}.`);
      

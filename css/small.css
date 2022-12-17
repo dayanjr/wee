@@ -16,6 +16,11 @@ p{
     padding: 20px;
    margin: 10px 150px 10px 150px;
 }
+#label{
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+}
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
     -moz-box-sizing: border-box;
@@ -126,7 +131,7 @@ header h2 {
 }
 
 .logo {
-    max-width: 220px;
+    max-width: 120px;
     border-radius: 50%;
 }
 input[type=text], select {
@@ -626,7 +631,7 @@ div.hideme {
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #d6def7;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding: .5rem 2%;
 }

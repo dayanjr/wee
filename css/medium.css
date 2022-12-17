@@ -88,9 +88,7 @@
         flex-direction: row;
     }
     
-    nav ul li:first-child {
-        display: none;
-    }
+   
 
     nav ul li {
         display: inline;

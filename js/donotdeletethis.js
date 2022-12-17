@@ -93,6 +93,7 @@ function cc3(userinput){const getfruits = async () => {
      sum_of_calories = calories1 + calories2 + calories3;
      sum_of_proteins = protein1 + protein2 + protein3;
      sum_of_sugars = sugar1 + sugar2 + sugar3;
+     console.log("merda", sum_of_sugars);
      sum_of_fat = fat1 + fat2 + fat3;
     // soma3 = calories + carbs + fat + protein + sugar;
      const d = new Date();
@@ -120,25 +121,33 @@ function cc3(userinput){const getfruits = async () => {
      l5 = document.getElementById("fifth_line");
      l6 = document.getElementById("sixth_line");
      l7 = document.getElementById("seventh_line");
-     l8 = document.getElementById("eigth_line");
+     l8 = document.getElementById("8");
+     l9 = document.getElementById("9");
+     l10 = document.getElementById("10");
+     l11 = document.getElementById("11");
+     l12 = document.getElementById("12");
+     l13 = document.getElementById("13");
+     l14 = document.getElementById("14");
+     l15 = document.getElementById("15");
+     l16 = document.getElementById("16");
      
      l3.append(`
      Congratulations ${clientname}, your order was successfully submitted
 `);
 l4.append(`Order details:
   -fruits mixed: ${first_fruit}, ${second_fruit} and ${third_fruit}.`);
-  l5.append(`-Total carbohydrates from fruit(s) selected: ${sum_of_carbs}.
-  -Total protein from fruit(s) selected: ${sum_of_proteins}.
-  -Total fat from fruit(s) selected: ${sum_of_fat}.
-  -Total sugar from fruit(s) selected: ${sum_of_sugars}.
-  -Total calories from fruit(s) selected: ${sum_of_calories}.`);
-  l6.append(`client info:`);
-  l5.append(`-client name:${clientname}.
-    -client phone number:${clientname_phone}.
-    -client email:${clientname_phone}.
-    -client special specifications:${clientname_s}.`);
-  l6.append(` Thank you for your order.
-  Order date and time: ${d}.`);
+  l5.append(`-Total carbohydrates from fruit(s) selected: ${sum_of_carbs}.`);
+  l6.append(`-Total protein from fruit(s) selected: ${sum_of_proteins}.`);
+  l7.append(`-Total fat from fruit(s) selected: ${sum_of_fat}.`);
+  l8.append(`-Total sugar from fruit(s) selected: ${sum_of_sugars}.`);
+  l9.append(`-Total calories from fruit(s) selected: ${sum_of_calories}.`);
+  l10.append( `client info:`);
+  l11.append(`-client name:${clientname}.`);
+    l12.append(`-client phone number:${clientname_phone}.`);
+    l13.append(`-client email:${clientname_email}.`);
+    l14.append(`-client special specifications:${clientname_s}.`);
+  l15.append(` Thank you for your order.`);
+  l16.append(`Order date and time: ${d}.`);
      
     }
     const response = await fetch(

@@ -89,12 +89,19 @@ function cc3(userinput){const getfruits = async () => {
      fat3 = datafruits[p].nutritions.fat;
      protein3 = datafruits[p].nutritions.protein;
      sugar3 = datafruits[p].nutritions.sugar;
+     //////
      sum_of_carbs = carbs1 + carbs2 + carbs3;
      sum_of_calories = calories1 + calories2 + calories3;
      sum_of_proteins = protein1 + protein2 + protein3;
      sum_of_sugars = sugar1 + sugar2 + sugar3;
-     console.log("merda", sum_of_sugars);
+    
      sum_of_fat = fat1 + fat2 + fat3;
+     sum_of_carbs2 = Math.round(sum_of_carbs);
+     sum_of_calories2 = Math.round(sum_of_calories);
+     sum_of_proteins2 = Math.round(sum_of_proteins);
+     sum_of_sugars2 = Math.round(sum_of_sugars);
+     sum_of_fat2 = Math.round(sum_of_fat);
+     ////
     // soma3 = calories + carbs + fat + protein + sugar;
      const d = new Date();
      //totalidade = soma + soma2 + soma3;
@@ -136,11 +143,11 @@ function cc3(userinput){const getfruits = async () => {
 `);
 l4.append(`Order details:
   -fruits mixed: ${first_fruit}, ${second_fruit} and ${third_fruit}.`);
-  l5.append(`-Total carbohydrates from fruit(s) selected: ${sum_of_carbs}.`);
-  l6.append(`-Total protein from fruit(s) selected: ${sum_of_proteins}.`);
-  l7.append(`-Total fat from fruit(s) selected: ${sum_of_fat}.`);
-  l8.append(`-Total sugar from fruit(s) selected: ${sum_of_sugars}.`);
-  l9.append(`-Total calories from fruit(s) selected: ${sum_of_calories}.`);
+  l5.append(`-Total carbohydrates from fruit(s) selected: ${sum_of_carbs2}.`);
+  l6.append(`-Total protein from fruit(s) selected: ${sum_of_proteins2}.`);
+  l7.append(`-Total fat from fruit(s) selected: ${sum_of_fat2}.`);
+  l8.append(`-Total sugar from fruit(s) selected: ${sum_of_sugars2}.`);
+  l9.append(`-Total calories from fruit(s) selected: ${sum_of_calories2}.`);
   l10.append( `client info:`);
   l11.append(`-client name:${clientname}.`);
     l12.append(`-client phone number:${clientname_phone}.`);
